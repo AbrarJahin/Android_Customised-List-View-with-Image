@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/list_selector"
+    android:paddingTop="0dip"
+    android:layout_gravity="top">
+    <TableRow>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/image4"
+            android:background="@drawable/image_bg"
+            >
+            <!-- Background for image is selected because to stop the effect of selector on image and add a border in the image -->
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                android:id="@+id/title_image"
+                />
+        </LinearLayout>
+        <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="0dip" android:layout_gravity="top"
+            >
+            <TableRow>
+                <TextView
+                    android:id="@+id/header_text"
+                    android:text="Header"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1" android:layout_gravity="left|center_vertical"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="4dip"
+                    android:textColor="#00FF00"
+                    android:layout_span="1"
+                    />
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Details"
+                    android:id="@+id/detailed_text"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="left|center_vertical"
+                    android:textSize="16sp"
+                    android:textColor="#0000FF"
+                    android:layout_marginLeft="10dip"
+                    android:layout_marginTop="4dip"
+                    android:gravity="left"/>
+            </TableRow>
+        </TableLayout>
+
+        <ImageView
+            android:layout_height="fill_parent"
+            android:layout_width="30dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/dislike1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            />
+    </TableRow>
+
+
+</TableLayout>
